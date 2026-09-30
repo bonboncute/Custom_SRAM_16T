@@ -98,14 +98,6 @@ Full-custom layout in Virtuoso Layout Suite. PMOS devices sit in the N-well near
 | DRC / LVS | Virtuoso physical verification (gpdk045 rule deck) |
 | Technology | gpdk045, 45 nm generic PDK |
 
-## Limitations and Future Work
-
-- **LVS is not clean yet.** There is an unresolved `nmos1v` terminal-count mismatch, most likely from how the extractor handles NMOS body connections. Post-layout (parasitic) simulation is waiting on this.
-- **No Monte Carlo analysis yet**, so full variation tolerance still has to be proven statistically.
-- **Write swing is sizing-dependent.** The high node reaches about 300 mV rather than the full 350 mV. Next steps are wider write transmission gates, a longer write pulse, or write-assist techniques such as a boosted WWL or a negative bitline.
-- **Single cell only.** The next step is a small array with row decoder, precharge, write driver and sense amplifier.
-
-
 
 
 
