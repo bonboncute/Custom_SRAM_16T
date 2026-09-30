@@ -1,0 +1,16 @@
+simulator( 'spectre )
+design(	 "/home/disk/simulation/SIM_IC61/tb_sram16T_6core_final_h0/spectre/schematic/netlist/netlist")
+resultsDir( "/home/disk/simulation/SIM_IC61/tb_sram16T_6core_final_h0/spectre/schematic" )
+modelFile( 
+    '("/home/work/gpdk045_v_5_0/gpdk045/../models/spectre/gpdk045.scs" "mc")
+)
+analysis('tran ?stop "40n"  )
+envOption(
+	'analysisOrder  list("tran") 
+)
+converge( 'ic "/Q" "0" )
+converge( 'ic "/QB" "0.35" )
+temp( 27 ) 
+run()
+selectResult( 'tran )
+plot(getData("/QB") getData("/Q") )

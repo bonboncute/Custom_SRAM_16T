@@ -1,0 +1,15 @@
+
+// Library name: SRAM_16T_THESIS
+// Cell name: tb_sram16T_6core_final_h0
+// View name: schematic
+I0 (0 Q QB net10 net11 net5 net2 net8 net9 net3 net4) sram16T_6core_final
+V7 (net11 0) vsource dc=350m type=dc
+V6 (net10 0) vsource dc=350m type=dc
+V4 (net9 0) vsource dc=350m type=dc
+V3 (net5 0) vsource dc=0 type=dc
+V1 (net8 0) vsource dc=350m type=dc
+V0 (net2 0) vsource dc=350m type=dc
+V5 (net3 0) vsource type=pulse val0=0 val1=0 period=30n delay=2n rise=100p \
+        fall=100p width=15n
+V2 (net4 0) vsource type=pulse val0=350.00m val1=350.00m period=6n \
+        delay=1n rise=50p fall=50p width=2n

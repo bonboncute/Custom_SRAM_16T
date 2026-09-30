@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"SRAM_16T_THESIS\" \"tb_sram16T_6core_final_h0\" \"schematic\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Jun  7 16:41:39 2026"
+"title" ""
+"analysisList" "()"
+END
