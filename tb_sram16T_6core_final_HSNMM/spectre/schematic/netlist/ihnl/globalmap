@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+SRAM_16T_THESIS/sram16T_6core_final/schematic sram16T_6core_final
+SRAM_16T_THESIS/tb_sram16T_6core_final_HSNMM/schematic tb_sram16T_6core_final_HSNMM
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

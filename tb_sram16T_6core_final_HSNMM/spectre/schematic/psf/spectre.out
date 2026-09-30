@@ -1,0 +1,541 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 15.1.0.284.isr1 64bit -- 12 Nov 2015
+Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: work   Host: work-eda   HostID: 7F0100   PID: 5047
+Memory  available: 2.2383 GB  physical: 4.0036 GB
+Linux   : Red Hat Enterprise Linux Server release 6.5 (Santiago)
+CPU Type: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+All processors running at 2688.0 MHz
+        Socket: Processors
+        0:       0
+        
+System load averages (1min, 5min, 15min) : 9.0 %, 10.0 %, 5.0 %
+This is a virtual machine
+
+
+Simulating `input.scs' on work-eda at 2:12:57 PM, Tue Jun 9, 2026 (process id: 5047).
+Current working directory: /home/disk/simulation/SIM_IC61/tb_sram16T_6core_final_HSNMM/spectre/schematic/netlist
+Command line:
+    /opt/MMSIM151/tools/bin/spectre -64 input.scs +escchars +log  \
+        ../psf/spectre.out +inter=mpsc +mpssession=spectre6_3355_7  \
+        -format psfxl -raw ../psf +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 5047
+
+Loading /opt/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /opt/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /opt/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /opt/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /opt/MMSIM151/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/disk/simulation/SIM_IC61/tb_sram16T_6core_final_HSNMM/spectre/schematic/netlist/input.scs
+Reading file:  /opt/MMSIM151/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/work/gpdk045_v_5_0/models/spectre/gpdk045.scs
+Reading file:  /home/work/gpdk045_v_5_0/models/spectre/gpdk045_mos.scs
+Reading file:  /home/work/gpdk045_v_5_0/models/spectre/gpdk045_diode.scs
+Reading file:  /home/work/gpdk045_v_5_0/models/spectre/gpdk045_bipolar.scs
+Reading file:  /home/work/gpdk045_v_5_0/models/spectre/gpdk045_mimcap.scs
+Reading file:  /home/work/gpdk045_v_5_0/models/spectre/gpdk045_moscap.scs
+Reading file:  /home/work/gpdk045_v_5_0/models/spectre/gpdk045_resistor.scs
+Reading file:  /home/work/gpdk045_v_5_0/models/spectre/gpdk045_inductor.scs
+Reading file:  /home/work/gpdk045_v_5_0/models/spectre/gpdk045_soa.scs
+Time for NDB Parsing: CPU = 370.944 ms, elapsed = 580.003 ms.
+Time accumulated: CPU = 381.941 ms, elapsed = 580.007 ms.
+Peak resident memory used = 57.9 Mbytes.
+
+
+The CPU load for active processors is :
+        Spectre  0 (100.0 %)    
+        Other   
+Reading link:  /opt/MMSIM151/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /opt/MMSIM151/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /opt/MMSIM151/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /opt/MMSIM151/tools.lnx86/spectre/etc/ahdl/constants.vams
+Existing shared object for module bsource_08102a is up to date.
+Installed compiled interface for bsource_08102a.
+Time for Elaboration: CPU = 15.998 ms, elapsed = 27.7741 ms.
+Time accumulated: CPU = 397.939 ms, elapsed = 610.886 ms.
+Peak resident memory used = 65.3 Mbytes.
+
+Time for EDB Visiting: CPU = 0 s, elapsed = 755.072 us.
+Time accumulated: CPU = 398.939 ms, elapsed = 611.817 ms.
+Peak resident memory used = 65.9 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2426): I0.nmos: `Pdiblc1' = -102.097e-06 is negative.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 32
+              bsim4 16    
+     bsource_08102a 16    
+            vsource 9     
+
+Analysis and control statement inventory:
+                 dc 1     
+               info 6     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 1.999 ms, elapsed = 15.5721 ms.
+Time accumulated: CPU = 401.938 ms, elapsed = 629.866 ms.
+Peak resident memory used = 67 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre6_3355_7, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+*********************************************
+DC Analysis `dc': VNOISE:dc = (0 V -> 350 mV)
+*********************************************
+
+Opening the PSF file ../psf/dc.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Trying `homotopy = gmin'.
+Trying `homotopy = source'.
+
+Notice from spectre at dc = 0 V during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I0.NM6:int_d) = -16.223 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+Notice from spectre at dc = 1 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I0.NM6:int_d) = -16.197 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+Notice from spectre at dc = 2 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I0.NM6:int_d) = -16.1701 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+Notice from spectre at dc = 3 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I0.NM6:int_d) = -16.1423 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+Notice from spectre at dc = 4 mV during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(I0.NM6:int_d) = -16.1134 mV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+        Further occurrences of this notice will be suppressed.
+
+    dc: dc = 9 mV        (2.57 %), step = 1 mV         (286 m%)
+    dc: dc = 10 mV       (2.86 %), step = 1 mV         (286 m%)
+    dc: dc = 11 mV       (3.14 %), step = 1 mV         (286 m%)
+    dc: dc = 12 mV       (3.43 %), step = 1 mV         (286 m%)
+    dc: dc = 13 mV       (3.71 %), step = 1 mV         (286 m%)
+    dc: dc = 14 mV          (4 %), step = 1 mV         (286 m%)
+    dc: dc = 15 mV       (4.29 %), step = 1 mV         (286 m%)
+    dc: dc = 16 mV       (4.57 %), step = 1 mV         (286 m%)
+    dc: dc = 17 mV       (4.86 %), step = 1 mV         (286 m%)
+    dc: dc = 18 mV       (5.14 %), step = 1 mV         (286 m%)
+    dc: dc = 19 mV       (5.43 %), step = 1 mV         (286 m%)
+    dc: dc = 20 mV       (5.71 %), step = 1 mV         (286 m%)
+    dc: dc = 21 mV          (6 %), step = 1 mV         (286 m%)
+    dc: dc = 22 mV       (6.29 %), step = 1 mV         (286 m%)
+    dc: dc = 23 mV       (6.57 %), step = 1 mV         (286 m%)
+    dc: dc = 24 mV       (6.86 %), step = 1 mV         (286 m%)
+    dc: dc = 25 mV       (7.14 %), step = 1 mV         (286 m%)
+    dc: dc = 26 mV       (7.43 %), step = 1 mV         (286 m%)
+    dc: dc = 27 mV       (7.71 %), step = 1 mV         (286 m%)
+    dc: dc = 28 mV          (8 %), step = 1 mV         (286 m%)
+    dc: dc = 29 mV       (8.29 %), step = 1 mV         (286 m%)
+    dc: dc = 30 mV       (8.57 %), step = 1 mV         (286 m%)
+    dc: dc = 31 mV       (8.86 %), step = 1 mV         (286 m%)
+    dc: dc = 32 mV       (9.14 %), step = 1 mV         (286 m%)
+    dc: dc = 33 mV       (9.43 %), step = 1 mV         (286 m%)
+    dc: dc = 34 mV       (9.71 %), step = 1 mV         (286 m%)
+    dc: dc = 35 mV         (10 %), step = 1 mV         (286 m%)
+    dc: dc = 36 mV       (10.3 %), step = 1 mV         (286 m%)
+    dc: dc = 37 mV       (10.6 %), step = 1 mV         (286 m%)
+    dc: dc = 38 mV       (10.9 %), step = 1 mV         (286 m%)
+    dc: dc = 39 mV       (11.1 %), step = 1 mV         (286 m%)
+    dc: dc = 40 mV       (11.4 %), step = 1 mV         (286 m%)
+    dc: dc = 41 mV       (11.7 %), step = 1 mV         (286 m%)
+    dc: dc = 42 mV         (12 %), step = 1 mV         (286 m%)
+    dc: dc = 43 mV       (12.3 %), step = 1 mV         (286 m%)
+    dc: dc = 44 mV       (12.6 %), step = 1 mV         (286 m%)
+    dc: dc = 45 mV       (12.9 %), step = 1 mV         (286 m%)
+    dc: dc = 46 mV       (13.1 %), step = 1 mV         (286 m%)
+    dc: dc = 47 mV       (13.4 %), step = 1 mV         (286 m%)
+    dc: dc = 48 mV       (13.7 %), step = 1 mV         (286 m%)
+    dc: dc = 49 mV         (14 %), step = 1 mV         (286 m%)
+    dc: dc = 50 mV       (14.3 %), step = 1 mV         (286 m%)
+    dc: dc = 51 mV       (14.6 %), step = 1 mV         (286 m%)
+    dc: dc = 52 mV       (14.9 %), step = 1 mV         (286 m%)
+    dc: dc = 53 mV       (15.1 %), step = 1 mV         (286 m%)
+    dc: dc = 54 mV       (15.4 %), step = 1 mV         (286 m%)
+    dc: dc = 55 mV       (15.7 %), step = 1 mV         (286 m%)
+    dc: dc = 56 mV         (16 %), step = 1 mV         (286 m%)
+    dc: dc = 57 mV       (16.3 %), step = 1 mV         (286 m%)
+    dc: dc = 58 mV       (16.6 %), step = 1 mV         (286 m%)
+    dc: dc = 59 mV       (16.9 %), step = 1 mV         (286 m%)
+    dc: dc = 60 mV       (17.1 %), step = 1 mV         (286 m%)
+    dc: dc = 61 mV       (17.4 %), step = 1 mV         (286 m%)
+    dc: dc = 62 mV       (17.7 %), step = 1 mV         (286 m%)
+    dc: dc = 63 mV         (18 %), step = 1 mV         (286 m%)
+    dc: dc = 64 mV       (18.3 %), step = 1 mV         (286 m%)
+    dc: dc = 65 mV       (18.6 %), step = 1 mV         (286 m%)
+    dc: dc = 66 mV       (18.9 %), step = 1 mV         (286 m%)
+    dc: dc = 67 mV       (19.1 %), step = 1 mV         (286 m%)
+    dc: dc = 68 mV       (19.4 %), step = 1 mV         (286 m%)
+    dc: dc = 69 mV       (19.7 %), step = 1 mV         (286 m%)
+    dc: dc = 70 mV         (20 %), step = 1 mV         (286 m%)
+    dc: dc = 71 mV       (20.3 %), step = 1 mV         (286 m%)
+    dc: dc = 72 mV       (20.6 %), step = 1 mV         (286 m%)
+    dc: dc = 73 mV       (20.9 %), step = 1 mV         (286 m%)
+    dc: dc = 74 mV       (21.1 %), step = 1 mV         (286 m%)
+    dc: dc = 75 mV       (21.4 %), step = 1 mV         (286 m%)
+    dc: dc = 76 mV       (21.7 %), step = 1 mV         (286 m%)
+    dc: dc = 77 mV         (22 %), step = 1 mV         (286 m%)
+    dc: dc = 78 mV       (22.3 %), step = 1 mV         (286 m%)
+    dc: dc = 79 mV       (22.6 %), step = 1 mV         (286 m%)
+    dc: dc = 80 mV       (22.9 %), step = 1 mV         (286 m%)
+    dc: dc = 81 mV       (23.1 %), step = 1 mV         (286 m%)
+    dc: dc = 82 mV       (23.4 %), step = 1 mV         (286 m%)
+    dc: dc = 83 mV       (23.7 %), step = 1 mV         (286 m%)
+    dc: dc = 84 mV         (24 %), step = 1 mV         (286 m%)
+    dc: dc = 85 mV       (24.3 %), step = 1 mV         (286 m%)
+    dc: dc = 86 mV       (24.6 %), step = 1 mV         (286 m%)
+    dc: dc = 87 mV       (24.9 %), step = 1 mV         (286 m%)
+    dc: dc = 88 mV       (25.1 %), step = 1 mV         (286 m%)
+    dc: dc = 89 mV       (25.4 %), step = 1 mV         (286 m%)
+    dc: dc = 90 mV       (25.7 %), step = 1 mV         (286 m%)
+    dc: dc = 91 mV         (26 %), step = 1 mV         (286 m%)
+    dc: dc = 92 mV       (26.3 %), step = 1 mV         (286 m%)
+    dc: dc = 93 mV       (26.6 %), step = 1 mV         (286 m%)
+    dc: dc = 94 mV       (26.9 %), step = 1 mV         (286 m%)
+    dc: dc = 95 mV       (27.1 %), step = 1 mV         (286 m%)
+    dc: dc = 96 mV       (27.4 %), step = 1 mV         (286 m%)
+    dc: dc = 97 mV       (27.7 %), step = 1 mV         (286 m%)
+    dc: dc = 98 mV         (28 %), step = 1 mV         (286 m%)
+    dc: dc = 99 mV       (28.3 %), step = 1 mV         (286 m%)
+    dc: dc = 100 mV      (28.6 %), step = 1 mV         (286 m%)
+    dc: dc = 101 mV      (28.9 %), step = 1 mV         (286 m%)
+    dc: dc = 102 mV      (29.1 %), step = 1 mV         (286 m%)
+    dc: dc = 103 mV      (29.4 %), step = 1 mV         (286 m%)
+    dc: dc = 104 mV      (29.7 %), step = 1 mV         (286 m%)
+    dc: dc = 105 mV        (30 %), step = 1 mV         (286 m%)
+    dc: dc = 106 mV      (30.3 %), step = 1 mV         (286 m%)
+    dc: dc = 107 mV      (30.6 %), step = 1 mV         (286 m%)
+    dc: dc = 108 mV      (30.9 %), step = 1 mV         (286 m%)
+    dc: dc = 109 mV      (31.1 %), step = 1 mV         (286 m%)
+    dc: dc = 110 mV      (31.4 %), step = 1 mV         (286 m%)
+    dc: dc = 111 mV      (31.7 %), step = 1 mV         (286 m%)
+    dc: dc = 112 mV        (32 %), step = 1 mV         (286 m%)
+    dc: dc = 113 mV      (32.3 %), step = 1 mV         (286 m%)
+    dc: dc = 114 mV      (32.6 %), step = 1 mV         (286 m%)
+    dc: dc = 115 mV      (32.9 %), step = 1 mV         (286 m%)
+    dc: dc = 116 mV      (33.1 %), step = 1 mV         (286 m%)
+    dc: dc = 117 mV      (33.4 %), step = 1 mV         (286 m%)
+    dc: dc = 118 mV      (33.7 %), step = 1 mV         (286 m%)
+    dc: dc = 119 mV        (34 %), step = 1 mV         (286 m%)
+    dc: dc = 120 mV      (34.3 %), step = 1 mV         (286 m%)
+    dc: dc = 121 mV      (34.6 %), step = 1 mV         (286 m%)
+    dc: dc = 122 mV      (34.9 %), step = 1 mV         (286 m%)
+    dc: dc = 123 mV      (35.1 %), step = 1 mV         (286 m%)
+    dc: dc = 124 mV      (35.4 %), step = 1 mV         (286 m%)
+    dc: dc = 125 mV      (35.7 %), step = 1 mV         (286 m%)
+    dc: dc = 126 mV        (36 %), step = 1 mV         (286 m%)
+    dc: dc = 127 mV      (36.3 %), step = 1 mV         (286 m%)
+    dc: dc = 128 mV      (36.6 %), step = 1 mV         (286 m%)
+    dc: dc = 129 mV      (36.9 %), step = 1 mV         (286 m%)
+    dc: dc = 130 mV      (37.1 %), step = 1 mV         (286 m%)
+    dc: dc = 131 mV      (37.4 %), step = 1 mV         (286 m%)
+    dc: dc = 132 mV      (37.7 %), step = 1 mV         (286 m%)
+    dc: dc = 133 mV        (38 %), step = 1 mV         (286 m%)
+    dc: dc = 134 mV      (38.3 %), step = 1 mV         (286 m%)
+    dc: dc = 135 mV      (38.6 %), step = 1 mV         (286 m%)
+    dc: dc = 136 mV      (38.9 %), step = 1 mV         (286 m%)
+    dc: dc = 137 mV      (39.1 %), step = 1 mV         (286 m%)
+    dc: dc = 138 mV      (39.4 %), step = 1 mV         (286 m%)
+    dc: dc = 139 mV      (39.7 %), step = 1 mV         (286 m%)
+    dc: dc = 140 mV        (40 %), step = 1 mV         (286 m%)
+    dc: dc = 141 mV      (40.3 %), step = 1 mV         (286 m%)
+    dc: dc = 142 mV      (40.6 %), step = 1 mV         (286 m%)
+    dc: dc = 143 mV      (40.9 %), step = 1 mV         (286 m%)
+    dc: dc = 144 mV      (41.1 %), step = 1 mV         (286 m%)
+    dc: dc = 145 mV      (41.4 %), step = 1 mV         (286 m%)
+    dc: dc = 146 mV      (41.7 %), step = 1 mV         (286 m%)
+    dc: dc = 147 mV        (42 %), step = 1 mV         (286 m%)
+    dc: dc = 148 mV      (42.3 %), step = 1 mV         (286 m%)
+    dc: dc = 149 mV      (42.6 %), step = 1 mV         (286 m%)
+    dc: dc = 150 mV      (42.9 %), step = 1 mV         (286 m%)
+    dc: dc = 151 mV      (43.1 %), step = 1 mV         (286 m%)
+    dc: dc = 152 mV      (43.4 %), step = 1 mV         (286 m%)
+    dc: dc = 153 mV      (43.7 %), step = 1 mV         (286 m%)
+    dc: dc = 154 mV        (44 %), step = 1 mV         (286 m%)
+    dc: dc = 155 mV      (44.3 %), step = 1 mV         (286 m%)
+    dc: dc = 156 mV      (44.6 %), step = 1 mV         (286 m%)
+    dc: dc = 157 mV      (44.9 %), step = 1 mV         (286 m%)
+    dc: dc = 158 mV      (45.1 %), step = 1 mV         (286 m%)
+    dc: dc = 159 mV      (45.4 %), step = 1 mV         (286 m%)
+    dc: dc = 160 mV      (45.7 %), step = 1 mV         (286 m%)
+    dc: dc = 161 mV        (46 %), step = 1 mV         (286 m%)
+    dc: dc = 162 mV      (46.3 %), step = 1 mV         (286 m%)
+    dc: dc = 163 mV      (46.6 %), step = 1 mV         (286 m%)
+    dc: dc = 164 mV      (46.9 %), step = 1 mV         (286 m%)
+    dc: dc = 165 mV      (47.1 %), step = 1 mV         (286 m%)
+    dc: dc = 166 mV      (47.4 %), step = 1 mV         (286 m%)
+    dc: dc = 167 mV      (47.7 %), step = 1 mV         (286 m%)
+    dc: dc = 168 mV        (48 %), step = 1 mV         (286 m%)
+    dc: dc = 169 mV      (48.3 %), step = 1 mV         (286 m%)
+    dc: dc = 170 mV      (48.6 %), step = 1 mV         (286 m%)
+    dc: dc = 171 mV      (48.9 %), step = 1 mV         (286 m%)
+    dc: dc = 172 mV      (49.1 %), step = 1 mV         (286 m%)
+    dc: dc = 173 mV      (49.4 %), step = 1 mV         (286 m%)
+    dc: dc = 174 mV      (49.7 %), step = 1 mV         (286 m%)
+    dc: dc = 175 mV        (50 %), step = 1 mV         (286 m%)
+    dc: dc = 176 mV      (50.3 %), step = 1 mV         (286 m%)
+    dc: dc = 177 mV      (50.6 %), step = 1 mV         (286 m%)
+    dc: dc = 178 mV      (50.9 %), step = 1 mV         (286 m%)
+    dc: dc = 179 mV      (51.1 %), step = 1 mV         (286 m%)
+    dc: dc = 180 mV      (51.4 %), step = 1 mV         (286 m%)
+    dc: dc = 181 mV      (51.7 %), step = 1 mV         (286 m%)
+    dc: dc = 182 mV        (52 %), step = 1 mV         (286 m%)
+    dc: dc = 183 mV      (52.3 %), step = 1 mV         (286 m%)
+    dc: dc = 184 mV      (52.6 %), step = 1 mV         (286 m%)
+    dc: dc = 185 mV      (52.9 %), step = 1 mV         (286 m%)
+    dc: dc = 186 mV      (53.1 %), step = 1 mV         (286 m%)
+    dc: dc = 187 mV      (53.4 %), step = 1 mV         (286 m%)
+    dc: dc = 188 mV      (53.7 %), step = 1 mV         (286 m%)
+    dc: dc = 189 mV        (54 %), step = 1 mV         (286 m%)
+    dc: dc = 190 mV      (54.3 %), step = 1 mV         (286 m%)
+    dc: dc = 191 mV      (54.6 %), step = 1 mV         (286 m%)
+    dc: dc = 192 mV      (54.9 %), step = 1 mV         (286 m%)
+    dc: dc = 193 mV      (55.1 %), step = 1 mV         (286 m%)
+    dc: dc = 194 mV      (55.4 %), step = 1 mV         (286 m%)
+    dc: dc = 195 mV      (55.7 %), step = 1 mV         (286 m%)
+    dc: dc = 196 mV        (56 %), step = 1 mV         (286 m%)
+    dc: dc = 197 mV      (56.3 %), step = 1 mV         (286 m%)
+    dc: dc = 198 mV      (56.6 %), step = 1 mV         (286 m%)
+    dc: dc = 199 mV      (56.9 %), step = 1 mV         (286 m%)
+    dc: dc = 200 mV      (57.1 %), step = 1 mV         (286 m%)
+    dc: dc = 201 mV      (57.4 %), step = 1 mV         (286 m%)
+    dc: dc = 202 mV      (57.7 %), step = 1 mV         (286 m%)
+    dc: dc = 203 mV        (58 %), step = 1 mV         (286 m%)
+    dc: dc = 204 mV      (58.3 %), step = 1 mV         (286 m%)
+    dc: dc = 205 mV      (58.6 %), step = 1 mV         (286 m%)
+    dc: dc = 206 mV      (58.9 %), step = 1 mV         (286 m%)
+    dc: dc = 207 mV      (59.1 %), step = 1 mV         (286 m%)
+    dc: dc = 208 mV      (59.4 %), step = 1 mV         (286 m%)
+    dc: dc = 209 mV      (59.7 %), step = 1 mV         (286 m%)
+    dc: dc = 210 mV        (60 %), step = 1 mV         (286 m%)
+    dc: dc = 211 mV      (60.3 %), step = 1 mV         (286 m%)
+    dc: dc = 212 mV      (60.6 %), step = 1 mV         (286 m%)
+    dc: dc = 213 mV      (60.9 %), step = 1 mV         (286 m%)
+    dc: dc = 214 mV      (61.1 %), step = 1 mV         (286 m%)
+    dc: dc = 215 mV      (61.4 %), step = 1 mV         (286 m%)
+    dc: dc = 216 mV      (61.7 %), step = 1 mV         (286 m%)
+    dc: dc = 217 mV        (62 %), step = 1 mV         (286 m%)
+    dc: dc = 218 mV      (62.3 %), step = 1 mV         (286 m%)
+    dc: dc = 219 mV      (62.6 %), step = 1 mV         (286 m%)
+    dc: dc = 220 mV      (62.9 %), step = 1 mV         (286 m%)
+    dc: dc = 221 mV      (63.1 %), step = 1 mV         (286 m%)
+    dc: dc = 222 mV      (63.4 %), step = 1 mV         (286 m%)
+    dc: dc = 223 mV      (63.7 %), step = 1 mV         (286 m%)
+    dc: dc = 224 mV        (64 %), step = 1 mV         (286 m%)
+    dc: dc = 225 mV      (64.3 %), step = 1 mV         (286 m%)
+    dc: dc = 226 mV      (64.6 %), step = 1 mV         (286 m%)
+    dc: dc = 227 mV      (64.9 %), step = 1 mV         (286 m%)
+    dc: dc = 228 mV      (65.1 %), step = 1 mV         (286 m%)
+    dc: dc = 229 mV      (65.4 %), step = 1 mV         (286 m%)
+    dc: dc = 230 mV      (65.7 %), step = 1 mV         (286 m%)
+    dc: dc = 231 mV        (66 %), step = 1 mV         (286 m%)
+    dc: dc = 232 mV      (66.3 %), step = 1 mV         (286 m%)
+    dc: dc = 233 mV      (66.6 %), step = 1 mV         (286 m%)
+    dc: dc = 234 mV      (66.9 %), step = 1 mV         (286 m%)
+    dc: dc = 235 mV      (67.1 %), step = 1 mV         (286 m%)
+    dc: dc = 236 mV      (67.4 %), step = 1 mV         (286 m%)
+    dc: dc = 237 mV      (67.7 %), step = 1 mV         (286 m%)
+    dc: dc = 238 mV        (68 %), step = 1 mV         (286 m%)
+    dc: dc = 239 mV      (68.3 %), step = 1 mV         (286 m%)
+    dc: dc = 240 mV      (68.6 %), step = 1 mV         (286 m%)
+    dc: dc = 241 mV      (68.9 %), step = 1 mV         (286 m%)
+    dc: dc = 242 mV      (69.1 %), step = 1 mV         (286 m%)
+    dc: dc = 243 mV      (69.4 %), step = 1 mV         (286 m%)
+    dc: dc = 244 mV      (69.7 %), step = 1 mV         (286 m%)
+    dc: dc = 245 mV        (70 %), step = 1 mV         (286 m%)
+    dc: dc = 246 mV      (70.3 %), step = 1 mV         (286 m%)
+    dc: dc = 247 mV      (70.6 %), step = 1 mV         (286 m%)
+    dc: dc = 248 mV      (70.9 %), step = 1 mV         (286 m%)
+    dc: dc = 249 mV      (71.1 %), step = 1 mV         (286 m%)
+    dc: dc = 250 mV      (71.4 %), step = 1 mV         (286 m%)
+    dc: dc = 251 mV      (71.7 %), step = 1 mV         (286 m%)
+    dc: dc = 252 mV        (72 %), step = 1 mV         (286 m%)
+    dc: dc = 253 mV      (72.3 %), step = 1 mV         (286 m%)
+    dc: dc = 254 mV      (72.6 %), step = 1 mV         (286 m%)
+    dc: dc = 255 mV      (72.9 %), step = 1 mV         (286 m%)
+    dc: dc = 256 mV      (73.1 %), step = 1 mV         (286 m%)
+    dc: dc = 257 mV      (73.4 %), step = 1 mV         (286 m%)
+    dc: dc = 258 mV      (73.7 %), step = 1 mV         (286 m%)
+    dc: dc = 259 mV        (74 %), step = 1 mV         (286 m%)
+    dc: dc = 260 mV      (74.3 %), step = 1 mV         (286 m%)
+    dc: dc = 261 mV      (74.6 %), step = 1 mV         (286 m%)
+    dc: dc = 262 mV      (74.9 %), step = 1 mV         (286 m%)
+    dc: dc = 263 mV      (75.1 %), step = 1 mV         (286 m%)
+    dc: dc = 264 mV      (75.4 %), step = 1 mV         (286 m%)
+    dc: dc = 265 mV      (75.7 %), step = 1 mV         (286 m%)
+    dc: dc = 266 mV        (76 %), step = 1 mV         (286 m%)
+    dc: dc = 267 mV      (76.3 %), step = 1 mV         (286 m%)
+    dc: dc = 268 mV      (76.6 %), step = 1 mV         (286 m%)
+    dc: dc = 269 mV      (76.9 %), step = 1 mV         (286 m%)
+    dc: dc = 270 mV      (77.1 %), step = 1 mV         (286 m%)
+    dc: dc = 271 mV      (77.4 %), step = 1 mV         (286 m%)
+    dc: dc = 272 mV      (77.7 %), step = 1 mV         (286 m%)
+    dc: dc = 273 mV        (78 %), step = 1 mV         (286 m%)
+    dc: dc = 274 mV      (78.3 %), step = 1 mV         (286 m%)
+    dc: dc = 275 mV      (78.6 %), step = 1 mV         (286 m%)
+    dc: dc = 276 mV      (78.9 %), step = 1 mV         (286 m%)
+    dc: dc = 277 mV      (79.1 %), step = 1 mV         (286 m%)
+    dc: dc = 278 mV      (79.4 %), step = 1 mV         (286 m%)
+    dc: dc = 279 mV      (79.7 %), step = 1 mV         (286 m%)
+    dc: dc = 280 mV        (80 %), step = 1 mV         (286 m%)
+    dc: dc = 281 mV      (80.3 %), step = 1 mV         (286 m%)
+    dc: dc = 282 mV      (80.6 %), step = 1 mV         (286 m%)
+    dc: dc = 283 mV      (80.9 %), step = 1 mV         (286 m%)
+    dc: dc = 284 mV      (81.1 %), step = 1 mV         (286 m%)
+    dc: dc = 285 mV      (81.4 %), step = 1 mV         (286 m%)
+    dc: dc = 286 mV      (81.7 %), step = 1 mV         (286 m%)
+    dc: dc = 287 mV        (82 %), step = 1 mV         (286 m%)
+    dc: dc = 288 mV      (82.3 %), step = 1 mV         (286 m%)
+    dc: dc = 289 mV      (82.6 %), step = 1 mV         (286 m%)
+    dc: dc = 290 mV      (82.9 %), step = 1 mV         (286 m%)
+    dc: dc = 291 mV      (83.1 %), step = 1 mV         (286 m%)
+    dc: dc = 292 mV      (83.4 %), step = 1 mV         (286 m%)
+    dc: dc = 293 mV      (83.7 %), step = 1 mV         (286 m%)
+    dc: dc = 294 mV        (84 %), step = 1 mV         (286 m%)
+    dc: dc = 295 mV      (84.3 %), step = 1 mV         (286 m%)
+    dc: dc = 296 mV      (84.6 %), step = 1 mV         (286 m%)
+    dc: dc = 297 mV      (84.9 %), step = 1 mV         (286 m%)
+    dc: dc = 298 mV      (85.1 %), step = 1 mV         (286 m%)
+    dc: dc = 299 mV      (85.4 %), step = 1 mV         (286 m%)
+    dc: dc = 300 mV      (85.7 %), step = 1 mV         (286 m%)
+    dc: dc = 301 mV        (86 %), step = 1 mV         (286 m%)
+    dc: dc = 302 mV      (86.3 %), step = 1 mV         (286 m%)
+    dc: dc = 303 mV      (86.6 %), step = 1 mV         (286 m%)
+    dc: dc = 304 mV      (86.9 %), step = 1 mV         (286 m%)
+    dc: dc = 305 mV      (87.1 %), step = 1 mV         (286 m%)
+    dc: dc = 306 mV      (87.4 %), step = 1 mV         (286 m%)
+    dc: dc = 307 mV      (87.7 %), step = 1 mV         (286 m%)
+    dc: dc = 308 mV        (88 %), step = 1 mV         (286 m%)
+    dc: dc = 309 mV      (88.3 %), step = 1 mV         (286 m%)
+    dc: dc = 310 mV      (88.6 %), step = 1 mV         (286 m%)
+    dc: dc = 311 mV      (88.9 %), step = 1 mV         (286 m%)
+    dc: dc = 312 mV      (89.1 %), step = 1 mV         (286 m%)
+    dc: dc = 313 mV      (89.4 %), step = 1 mV         (286 m%)
+    dc: dc = 314 mV      (89.7 %), step = 1 mV         (286 m%)
+    dc: dc = 315 mV        (90 %), step = 1 mV         (286 m%)
+    dc: dc = 316 mV      (90.3 %), step = 1 mV         (286 m%)
+    dc: dc = 317 mV      (90.6 %), step = 1 mV         (286 m%)
+    dc: dc = 318 mV      (90.9 %), step = 1 mV         (286 m%)
+    dc: dc = 319 mV      (91.1 %), step = 1 mV         (286 m%)
+    dc: dc = 320 mV      (91.4 %), step = 1 mV         (286 m%)
+    dc: dc = 321 mV      (91.7 %), step = 1 mV         (286 m%)
+    dc: dc = 322 mV        (92 %), step = 1 mV         (286 m%)
+    dc: dc = 323 mV      (92.3 %), step = 1 mV         (286 m%)
+    dc: dc = 324 mV      (92.6 %), step = 1 mV         (286 m%)
+    dc: dc = 325 mV      (92.9 %), step = 1 mV         (286 m%)
+    dc: dc = 326 mV      (93.1 %), step = 1 mV         (286 m%)
+    dc: dc = 327 mV      (93.4 %), step = 1 mV         (286 m%)
+    dc: dc = 328 mV      (93.7 %), step = 1 mV         (286 m%)
+    dc: dc = 329 mV        (94 %), step = 1 mV         (286 m%)
+    dc: dc = 330 mV      (94.3 %), step = 1 mV         (286 m%)
+    dc: dc = 331 mV      (94.6 %), step = 1 mV         (286 m%)
+    dc: dc = 332 mV      (94.9 %), step = 1 mV         (286 m%)
+    dc: dc = 333 mV      (95.1 %), step = 1 mV         (286 m%)
+    dc: dc = 334 mV      (95.4 %), step = 1 mV         (286 m%)
+    dc: dc = 335 mV      (95.7 %), step = 1 mV         (286 m%)
+    dc: dc = 336 mV        (96 %), step = 1 mV         (286 m%)
+    dc: dc = 337 mV      (96.3 %), step = 1 mV         (286 m%)
+    dc: dc = 338 mV      (96.6 %), step = 1 mV         (286 m%)
+    dc: dc = 339 mV      (96.9 %), step = 1 mV         (286 m%)
+    dc: dc = 340 mV      (97.1 %), step = 1 mV         (286 m%)
+    dc: dc = 341 mV      (97.4 %), step = 1 mV         (286 m%)
+    dc: dc = 342 mV      (97.7 %), step = 1 mV         (286 m%)
+    dc: dc = 343 mV        (98 %), step = 1 mV         (286 m%)
+    dc: dc = 344 mV      (98.3 %), step = 1 mV         (286 m%)
+    dc: dc = 345 mV      (98.6 %), step = 1 mV         (286 m%)
+    dc: dc = 346 mV      (98.9 %), step = 1 mV         (286 m%)
+    dc: dc = 347 mV      (99.1 %), step = 1 mV         (286 m%)
+    dc: dc = 348 mV      (99.4 %), step = 1 mV         (286 m%)
+    dc: dc = 349 mV      (99.7 %), step = 1 mV         (286 m%)
+    dc: dc = 350 mV       (100 %), step = 1 mV         (286 m%)
+Total time required for dc analysis `dc': CPU = 47.992 ms, elapsed = 111.069 ms.
+Time accumulated: CPU = 451.93 ms, elapsed = 780.667 ms.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre.
+    692 notices suppressed.
+
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Aggregate audit (2:13:09 PM, Tue Jun 9, 2026):
+Time used: CPU = 494 ms, elapsed = 12.3 s, util. = 4.03%.
+Time spent in licensing: elapsed = 61.3 ms.
+Peak memory used = 69.9 Mbytes.
+Simulation started at: 2:12:57 PM, Tue Jun 9, 2026, ended at: 2:13:09 PM, Tue Jun 9, 2026, with elapsed time (wall clock): 12.3 s.
+spectre completes with 0 errors, 2 warnings, and 11 notices.

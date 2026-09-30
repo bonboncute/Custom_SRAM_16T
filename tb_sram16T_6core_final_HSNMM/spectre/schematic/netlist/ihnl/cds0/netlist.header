@@ -1,0 +1,5 @@
+
+// Library name: SRAM_16T_THESIS
+// Cell name: sram16T_6core_final
+// View name: schematic
+subckt sram16T_6core_final GND Q QB RBL RBLB RWL VDD WBL WBLB WWL WWLB

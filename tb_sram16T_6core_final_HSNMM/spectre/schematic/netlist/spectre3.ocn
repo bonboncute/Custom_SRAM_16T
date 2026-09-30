@@ -1,0 +1,17 @@
+simulator( 'spectre )
+design(	 "/home/disk/simulation/SIM_IC61/tb_sram16T_6core_final_HSNMM/spectre/schematic/netlist/netlist")
+resultsDir( "/home/disk/simulation/SIM_IC61/tb_sram16T_6core_final_HSNMM/spectre/schematic" )
+modelFile( 
+    '("/home/work/gpdk045_v_5_0/gpdk045/../models/spectre/gpdk045.scs" "tt")
+)
+analysis('dc ?dev "/VNOISE"  ?param "dc"  ?start "0"  
+		?stop "350m"  ?step "1m"  )
+envOption(
+	'analysisOrder  list("dc") 
+)
+converge( 'ic "/net03" "0.35" )
+converge( 'ic "/QB" "0" )
+temp( 27 ) 
+run()
+selectResult( 'dc )
+plot(getData("/QB") getData("/net03") )

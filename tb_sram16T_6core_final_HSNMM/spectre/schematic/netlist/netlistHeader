@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Jun  9 14:09:27 2026
+// Design library name: SRAM_16T_THESIS
+// Design cell name: tb_sram16T_6core_final_HSNMM
+// Design view name: schematic
+simulator lang=spectre
+global 0

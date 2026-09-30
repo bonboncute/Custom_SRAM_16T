@@ -1,0 +1,4 @@
+CADENCE IHNL11142
+
+SRAM_16T_THESIS sram16T_6core_final schematic cds0
+SRAM_16T_THESIS tb_sram16T_6core_final_HSNMM schematic cds1

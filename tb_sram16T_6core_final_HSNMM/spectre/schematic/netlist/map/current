@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "tb_sram16T_6core_final_HSNMM"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/disk/simulation/SIM_IC61/tb_sram16T_6core_final_HSNMM/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "SRAM_16T_THESIS/tb_sram16T_6core_final_HSNMM/schematic" "tb_sram16T_6core_final_HSNMM" )
+( "SRAM_16T_THESIS/sram16T_6core_final/schematic" "sram16T_6core_final" )
+ )
+( "tb_sram16T_6core_final_HSNMM" "ihnl/cds1/map" )
+( "sram16T_6core_final" "ihnl/cds0/map" )
+ )
