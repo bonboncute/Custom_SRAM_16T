@@ -1,0 +1,5 @@
+HEADER
+"PSFversion" "1.00"
+"I0n" "sram16T_6core_final"
+"V7n V6n V4n V3n V1n V0n" "analogLib_vdc_spectre"
+"V5n V2n" "analogLib_vpulse_spectre"

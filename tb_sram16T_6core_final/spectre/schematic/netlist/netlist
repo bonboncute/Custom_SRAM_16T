@@ -1,0 +1,70 @@
+
+// Library name: SRAM_16T_THESIS
+// Cell name: sram16T_6core_final
+// View name: schematic
+subckt sram16T_6core_final GND Q QB RBL RBLB RWL VDD WBL WBLB WWL WWLB
+    NM12 (net47 QB GND GND) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM11 (net48 RWL net47 net47) g45n1svt w=(120n) l=45n nf=1 as=16.8f \
+        ad=16.8f ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n \
+        sd=160n sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM10 (net49 QB net48 net48) g45n1svt w=(120n) l=45n nf=1 as=16.8f \
+        ad=16.8f ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n \
+        sd=160n sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM9 (RBLB RWL net49 net49) g45n1svt w=(120n) l=45n nf=1 as=16.8f \
+        ad=16.8f ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n \
+        sd=160n sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM8 (net16 Q GND GND) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM7 (net17 RWL net16 net16) g45n1svt w=(120n) l=45n nf=1 as=16.8f \
+        ad=16.8f ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n \
+        sd=160n sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM6 (net18 Q net17 net17) g45n1svt w=(120n) l=45n nf=1 as=16.8f \
+        ad=16.8f ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n \
+        sd=160n sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM5 (RBL RWL net18 net18) g45n1svt w=(120n) l=45n nf=1 as=16.8f \
+        ad=16.8f ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n \
+        sd=160n sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM4 (QB WWLB GND GND) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM3 (Q WWLB GND GND) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM2 (WBLB WWL QB GND) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM1 (WBL WWL Q GND) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM0 (Q QB GND GND) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    nmos (QB Q GND GND) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    PM0 (Q QB VDD VDD) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+    pmos (QB Q VDD VDD) g45p1svt w=(240n) l=45n nf=1 as=33.6f ad=33.6f \
+        ps=760n pd=760n nrd=583.333m nrs=583.333m sa=140n sb=140n sd=160n \
+        sca=151.92744 scb=0.10471 scc=0.01874 m=(1)
+ends sram16T_6core_final
+// End of subcircuit definition.
+
+// Library name: SRAM_16T_THESIS
+// Cell name: tb_sram16T_6core_final
+// View name: schematic
+I0 (0 Q QB net10 net11 net5 net2 net8 net9 net3 net4) sram16T_6core_final
+V7 (net11 0) vsource dc=350m type=dc
+V6 (net10 0) vsource dc=350m type=dc
+V4 (net9 0) vsource dc=0 type=dc
+V3 (net5 0) vsource dc=0 type=dc
+V1 (net8 0) vsource dc=350m type=dc
+V0 (net2 0) vsource dc=350m type=dc
+V5 (net3 0) vsource type=pulse val0=0 val1=350m period=30n delay=2n \
+        rise=100p fall=100p width=15n
+V2 (net4 0) vsource type=pulse val0=0 val1=0 period=6n delay=1n rise=50p \
+        fall=50p width=2n
