@@ -2,8 +2,6 @@
 
 Transistor-level design, simulation and full-custom layout of a **16-transistor SRAM bitcell** that operates at a near-threshold supply of **0.35 V**. Built in **Cadence Virtuoso IC617** with the **gpdk045** (45 nm) library, and compared against a conventional 6T SRAM cell.
 
-Bachelor thesis, School of Computer Science and Engineering, International University (VNU-HCM), 2026.
-
 ## Why 16T?
 
 At near-threshold voltage, a standard 6T cell suffers from **read disturbance**: during a read, the precharged bitline connects directly to the storage node and can push the stored `0` upward until the cell flips.
