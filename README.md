@@ -37,12 +37,12 @@ The trade-off is more transistors, a larger area, and more control signals.
 
 | Operation | Initial (Q, QB) | Final Q | Final QB | Result |
 |-----------|-----------------|---------|----------|--------|
-| Write-1 | (0, 350 mV) | ≈ 300 mV | ≈ 0 mV | ✅ Pass |
-| Write-0 | (350, 0 mV) | ≈ 0 mV | ≈ 300 mV | ✅ Pass |
-| Read-1 | (350, 0 mV) | ≈ 350 mV | ≈ 0 mV | ✅ No flip |
-| Read-0 | (0, 350 mV) | ≈ 0 mV | ≈ 350 mV | ✅ No flip |
-| Hold-1 | (350, 0 mV) | ≈ 300 mV | ≈ 0 mV | ✅ Retained |
-| Hold-0 | (0, 350 mV) | ≈ 0 mV | ≈ 300 mV | ✅ Retained |
+| Write-1 | (0, 350 mV) | ≈ 300 mV | ≈ 0 mV |  Pass |
+| Write-0 | (350, 0 mV) | ≈ 0 mV | ≈ 300 mV |  Pass |
+| Read-1 | (350, 0 mV) | ≈ 350 mV | ≈ 0 mV |  No flip |
+| Read-0 | (0, 350 mV) | ≈ 0 mV | ≈ 350 mV |  No flip |
+| Hold-1 | (350, 0 mV) | ≈ 300 mV | ≈ 0 mV |  Retained |
+| Hold-0 | (0, 350 mV) | ≈ 0 mV | ≈ 300 mV |  Retained |
 
 **Testbench:** DC sources set VDD and the bitlines, and pulse sources drive the write and read wordlines.
 
